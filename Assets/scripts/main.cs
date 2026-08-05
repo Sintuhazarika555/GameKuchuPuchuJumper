@@ -20,11 +20,8 @@ public class EventManager : MonoBehaviour
         }
     }
 
-    // --- SCENE SWITCHING METHODS ---
+    // --- SCENE SWITCHING METHODS --
 
-    /// <summary>
-    /// Load a scene by its exact name (e.g. "MainMenu", "Level_01")
-    /// </summary>
     public void LoadSceneByName(string sceneName)
     {
         Time.timeScale = 1f; // Reset time in case the game was paused
@@ -45,9 +42,6 @@ public class EventManager : MonoBehaviour
 
     // --- APPLICATION QUIT METHOD ---
 
-    /// <summary>
-    /// Quits the game (Works on Android, PC builds, and inside Unity Editor)
-    /// </summary>
     public void GameOver()
     {
         Debug.Log("Game Over button clicked!");
